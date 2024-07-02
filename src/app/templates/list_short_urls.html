@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>List of Short URLs</h1>
+<p>Total Short URLs: {{ total_short_urls }}</p>
+<ul>
+    {% for short_url in short_urls %}
+    <li>{{ short_url.original_url }} -> {{ short_url.short_url }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
