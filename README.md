@@ -17,4 +17,20 @@ Install the dependencies: bash Copy code pip install -r requirements.txt Run the
 
 bash Copy code python manage.py runserver Access the application: Open your web browser and navigate to http://127.0.0.1:8000/.
 
-#App is inside the Src folder 
+Note :- #App is inside the Src folder 
+
+ Directory Structure: env/
+                        └── src/
+                             └── app/
+                                  ├── manage.py
+                                  ├── app/
+                                  │   ├── __init__.py
+                                  │   ├── settings.py
+                                  │   ├── urls.py
+                                  │   ├── wsgi.py
+                                  └── urlshort/
+                                          ├── __init__.py
+                                          ├── views.py
+                                          └── urls.py
+
+
